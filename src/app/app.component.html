@@ -1,0 +1,12 @@
+<section>
+  <label for="filter">Filter Me :)</label>
+  <input type="text" name="filter" id="filter" [(ngModel)]="text">
+  <table>
+    <thead></thead>
+    <tbody>
+      <tr *ngFor="let item of categories | filter: text" class="tt" >
+        {{item}}
+      </tr>
+    </tbody>
+  </table>
+</section>
